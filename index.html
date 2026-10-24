@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ज्ञानगंगा AI — Electronics Learning Portal</title>
+<style>
+:root{--bg:#f4f7fb;--panel:#fff;--ink:#182230;--muted:#627083;--line:#dfe6ef;--brand:#2457d6;--brand2:#153da8;--soft:#eaf0ff;--good:#e7f8ef;--danger:#fff0ee;--shadow:0 8px 26px rgba(21,48,92,.07)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:10px;padding:10px 14px;background:var(--brand);color:white;font-weight:650}button:hover{background:var(--brand2)}button.secondary{background:#eef2f8;color:var(--ink);border:1px solid var(--line)}button.danger{background:#a52d2d}.layout{display:grid;grid-template-columns:245px 1fr;min-height:100vh}.sidebar{background:#101d36;color:white;padding:24px 17px;display:flex;flex-direction:column;gap:12px}.logo{font-size:22px;font-weight:800;margin:0 8px}.sublogo{color:#bdc9e0;font-size:13px;margin:0 8px 18px}.nav{display:flex;flex-direction:column;gap:6px}.nav button{background:transparent;text-align:left;color:#d8e1f4;font-weight:550}.nav button.active,.nav button:hover{background:#263b62;color:white}.sidefoot{margin-top:auto;color:#aebbd2;font-size:12px;padding:10px}.main{padding:28px;max-width:1400px;width:100%;margin:0 auto}.topline{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:22px}.eyebrow{color:var(--brand);font-weight:800;text-transform:uppercase;font-size:12px;letter-spacing:.1em}.hero{background:linear-gradient(120deg,#142b57,#2d5cd0);color:white;padding:30px;border-radius:22px;box-shadow:var(--shadow);margin-bottom:22px}.hero h1{font-size:clamp(28px,4vw,42px);line-height:1.12;margin:8px 0 12px}.hero p{max-width:720px;color:#e0e9ff;margin:0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.two{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.panel,.metric,.resource,.chatbox{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}.metric strong{display:block;font-size:28px;line-height:1.2}.metric span{color:var(--muted);font-size:13px}.panel h2,.section-title{margin:0 0 12px}.muted{color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{background:var(--soft);color:#2149aa;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:700}.toolbar{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px;margin:16px 0}.field{display:flex;flex-direction:column;gap:5px;margin-bottom:12px}.field label{font-size:13px;font-weight:700;color:#3c4b60}.field input,.field select,.field textarea,.toolbar input,.toolbar select{width:100%;padding:10px 12px;border:1px solid #cbd5e1;border-radius:10px;background:white;color:var(--ink)}.field textarea{min-height:90px;resize:vertical}.resources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.resource h3{margin:8px 0;font-size:18px}.resource p{margin:8px 0;color:var(--muted)}.meta{font-size:12px;color:var(--muted)}.resource a{font-weight:700;color:var(--brand);text-decoration:none}.resource a:hover{text-decoration:underline}.resource-top{display:flex;justify-content:space-between;align-items:start;gap:8px}.smallbtn{font-size:12px;padding:6px 9px}.tracklist{columns:2;padding-left:20px}.tracklist li{padding:3px 0}.hidden{display:none!important}.notice{padding:12px 14px;border-radius:10px;background:#fff6df;color:#795300;font-size:13px;margin:12px 0}.chatbox{display:flex;flex-direction:column;gap:12px;min-height:280px}.messages{display:flex;flex-direction:column;gap:10px;max-height:420px;overflow:auto}.bubble{max-width:88%;padding:11px 13px;border-radius:14px;white-space:pre-wrap;overflow-wrap:anywhere}.bubble.user{background:var(--soft);align-self:flex-end}.bubble.assistant{background:#f0f3f8;align-self:flex-start}.chatinput{display:flex;gap:8px}.chatinput input{flex:1;min-width:0;padding:11px;border:1px solid var(--line);border-radius:10px}.empty{padding:25px;text-align:center;color:var(--muted);border:1px dashed #cbd5e1;border-radius:14px}.footer{color:var(--muted);font-size:12px;margin-top:26px;border-top:1px solid var(--line);padding-top:14px}.mobile-menu{display:none}
+@media(max-width:850px){.layout{grid-template-columns:1fr}.sidebar{padding:14px;gap:8px}.logo{font-size:20px}.sublogo{margin-bottom:4px}.nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.sidefoot{margin-top:4px}.main{padding:16px}.grid{grid-template-columns:1fr}.two{grid-template-columns:1fr}.resources{grid-template-columns:1fr}.toolbar{grid-template-columns:1fr}.hero{padding:23px}.tracklist{columns:1}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <div class="logo">📚 ज्ञानगंगा AI</div>
+  <div class="sublogo">Electronics Learning Portal</div>
+  <nav class="nav" aria-label="Main navigation">
+    <button class="active" data-page="Home">🏠 Home</button>
+    <button data-page="Courses & Videos">🎓 Courses & Videos</button>
+    <button data-page="Books & References">📖 Books & References</button>
+    <button data-page="AI Study Assistant">✨ AI Study Assistant</button>
+    <button data-page="Add Resource">＋ Add Resource</button>
+  </nav>
+  <div class="sidefoot">Created by Ishan Kulkarni<br>Static HTML edition</div>
+</aside>
+<main class="main">
+  <div class="topline"><div><div class="eyebrow">Electronics • Embedded systems • Learning</div><div class="muted">A practical hub for your next engineering skill.</div></div><button class="secondary" id="exportBtn">Export resources CSV</button></div>
+  <section id="page-Home" class="page">
+    <div class="hero"><div class="eyebrow" style="color:#bcd0ff">Welcome to your learning hub</div><h1>ज्ञानगंगा AI</h1><p>Learn electronics. Build embedded systems. Grow your skills. Find courses, videos, documentation, books, and reference material in one place.</p></div>
+    <div class="grid" style="margin-bottom:20px">
+      <div class="metric"><strong id="totalCount">0</strong><span>Total resources</span></div>
+      <div class="metric"><strong id="courseCount">0</strong><span>Courses and videos</span></div>
+      <div class="metric"><strong id="bookCount">0</strong><span>Books and references</span></div>
+    </div>
+    <div class="two">
+      <div class="panel"><h2>Learning tracks</h2><ul class="tracklist" id="tracks"></ul></div>
+      <div class="panel"><h2>Start learning</h2><p class="muted">Browse the library and filter by topic or level. You can add your own resources; they are saved in this browser.</p><div class="chips"><span class="chip">Beginner friendly</span><span class="chip">Official docs</span><span class="chip">Embedded C</span><span class="chip">MCUs & RTOS</span></div><div class="notice">Some courses are free to study but may charge for certificates. Always check the provider's terms.</div><button onclick="showPage('Courses & Videos')">Browse courses</button></div>
+    </div>
+  </section>
+  <section id="page-Courses & Videos" class="page hidden">
+    <h1 class="section-title">Courses & Videos</h1><p class="muted">Search courses, video lectures, and tutorials.</p>
+    <div class="toolbar"><input id="courseSearch" placeholder="Search title, topic, source…"><select id="courseTopic"></select><select id="courseLevel"></select></div><div id="courseResults" class="resources"></div>
+  </section>
+  <section id="page-Books & References" class="page hidden">
+    <h1 class="section-title">Books & References</h1><p class="muted">Browse books, references, and technical documentation.</p>
+    <div class="toolbar"><input id="bookSearch" placeholder="Search title, topic, source…"><select id="bookTopic"></select><select id="bookLevel"></select></div><div id="bookResults" class="resources"></div>
+  </section>
+  <section id="page-AI Study Assistant" class="page hidden">
+    <h1 class="section-title">AI Study Assistant</h1><p class="muted">Ask about Embedded C, microcontrollers, RTOS, digital electronics, or your study plan.</p>
+    <div class="notice">This is a static website, so it cannot hide a shared API key on a public server. To enable Gemini chat, enter your own API key below. It is kept only in this page's memory and is not saved to local storage. Do not paste a key into a public/shared computer.</div>
+    <div class="panel" style="margin-bottom:14px"><div class="field"><label for="geminiKey">Your Gemini API key (optional)</label><input type="password" id="geminiKey" autocomplete="off" placeholder="Paste your own Gemini API key"></div><div class="field"><label for="geminiModel">Gemini model</label><input id="geminiModel" value="gemini-2.5-flash" placeholder="Available Gemini model name"></div><p class="muted" style="font-size:12px">API access, model availability, quotas, and charges are controlled by Google. The app sends your prompt and chat history to Google's Gemini API when you submit a question.</p></div>
+    <div class="chatbox"><div id="messages" class="messages"><div class="bubble assistant">Namaste! I'm your electronics study assistant. Ask me to explain a concept, review embedded C code, or plan a learning path.</div></div><form id="chatForm" class="chatinput"><input id="chatPrompt" placeholder="Ask an electronics question…" required><button type="submit">Send</button></form><div><button id="clearChat" class="secondary smallbtn" type="button">Clear chat</button></div></div>
+  </section>
+  <section id="page-Add Resource" class="page hidden">
+    <h1 class="section-title">Add a Learning Resource</h1><p class="muted">Your additions are stored in this browser on this device.</p>
+    <form id="resourceForm" class="panel">
+      <div class="field"><label for="newTitle">Resource title *</label><input id="newTitle" required></div>
+      <div class="grid"><div class="field"><label for="newType">Resource type *</label><select id="newType"><option>Course</option><option>Video / Tutorial</option><option>Book / Reference</option><option>Documentation</option><option>Other</option></select></div><div class="field"><label for="newTopic">Topic *</label><select id="newTopic"></select></div><div class="field"><label for="newLevel">Level *</label><select id="newLevel"><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></div></div>
+      <div class="field"><label for="newDescription">Description</label><textarea id="newDescription"></textarea></div>
+      <div class="grid"><div class="field"><label for="newUrl">Resource URL (HTTP/HTTPS) *</label><input id="newUrl" type="url" placeholder="https://example.com" required></div><div class="field"><label for="newSource">Publisher or source *</label><input id="newSource" required></div></div>
+      <button type="submit">Save resource</button> <span id="formStatus" class="muted" role="status"></span>
+    </form>
+  </section>
+  <div class="footer">ज्ञानगंगा AI • Electronics Learning Portal • Resource data and chat history stay in this browser unless you use the optional Gemini assistant.</div>
+</main>
+</div>
+<script>
+const TOPICS=["Embedded C","ARM Cortex-M","STM32","ESP32","RTOS","FPGA","PCB Design","Digital Electronics","Electronics Fundamentals","Processor Architecture","Embedded Linux"];
+const starter=[
+{title:"All About Circuits Textbook",type:"Book / Reference",topic:"Electronics Fundamentals",level:"Beginner",description:"Free online electronics textbook.",url:"https://www.allaboutcircuits.com/textbook/",source:"All About Circuits"},
+{title:"GNU C Documentation",type:"Documentation",topic:"Embedded C",level:"Intermediate",description:"C compiler documentation and reference.",url:"https://gcc.gnu.org/onlinedocs/",source:"GNU"},
+{title:"Arm Developer Training",type:"Course",topic:"ARM Cortex-M",level:"Beginner",description:"Official Arm learning resources.",url:"https://developer.arm.com/Training",source:"Arm"},
+{title:"STM32 Education",type:"Course",topic:"STM32",level:"Beginner",description:"Official STM32 training resources.",url:"https://www.st.com/content/st_com/en/support/learning/stm32-education.html",source:"STMicroelectronics"},
+{title:"ESP-IDF Programming Guide",type:"Documentation",topic:"ESP32",level:"Intermediate",description:"Official ESP32 development framework documentation.",url:"https://docs.espressif.com/projects/esp-idf/en/stable/esp32/",source:"Espressif"},
+{title:"FreeRTOS Documentation",type:"Documentation",topic:"RTOS",level:"Intermediate",description:"RTOS concepts, APIs, and guides.",url:"https://www.freertos.org/Documentation/RTOS_book.html",source:"FreeRTOS"},
+{title:"Nandland Tutorials",type:"Video / Tutorial",topic:"FPGA",level:"Beginner",description:"FPGA and digital logic learning material.",url:"https://nandland.com/",source:"Nandland"},
+{title:"KiCad Documentation",type:"Course / Tutorial",topic:"PCB Design",level:"Beginner",description:"Learn PCB design using KiCad.",url:"https://docs.kicad.org/",source:"KiCad"},
+{title:"NPTEL Courses",type:"Course / Video",topic:"Digital Electronics",level:"Beginner",description:"University courses and video lectures.",url:"https://nptel.ac.in/",source:"NPTEL"},
+{title:"Linux Kernel Documentation",type:"Documentation",topic:"Embedded Linux",level:"Advanced",description:"Official Linux kernel documentation.",url:"https://docs.kernel.org/",source:"Linux"},
+{title:"MIT OpenCourseWare",type:"Course / Video",topic:"Processor Architecture",level:"Intermediate",description:"Open university course materials.",url:"https://ocw.mit.edu/",source:"MIT"}
+];
+let resources=[];
+try{const saved=localStorage.getItem("gyangangaa_resources_v1");resources=saved?JSON.parse(saved):starter.slice()}catch(e){resources=starter.slice()}
+function saveResources(){try{localStorage.setItem("gyangangaa_resources_v1",JSON.stringify(resources))}catch(e){alert("Could not save in this browser. Export a CSV to keep a copy.")}}
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function isCourse(r){return /course|video|tutorial/i.test(r.type)}
+function isBook(r){return /book|reference/i.test(r.type)}
+function fillSelect(id,items,first){const el=document.getElementById(id);el.innerHTML="";[first,...items].forEach(x=>{const o=document.createElement("option");o.value=x;o.textContent=x;el.appendChild(o)})}
+["courseTopic","bookTopic"].forEach(id=>fillSelect(id,TOPICS,"All topics"));
+["courseLevel","bookLevel"].forEach(id=>fillSelect(id,["Beginner","Intermediate","Advanced"],"All levels"));
+fillSelect("newTopic",TOPICS,TOPICS[0]);document.getElementById("newTopic").value=TOPICS[0];
+document.getElementById("tracks").innerHTML=TOPICS.map(t=>`<li>${esc(t)}</li>`).join("");
+function showPage(name){document.querySelectorAll(".page").forEach(p=>p.classList.add("hidden"));document.getElementById("page-"+name).classList.remove("hidden");document.querySelectorAll(".nav button").forEach(b=>b.classList.toggle("active",b.dataset.page===name));if(name==="Courses & Videos")renderLibrary("course");if(name==="Books & References")renderLibrary("book");window.scrollTo({top:0,behavior:"smooth"})}
+window.showPage=showPage;
+document.querySelectorAll(".nav button").forEach(b=>b.addEventListener("click",()=>showPage(b.dataset.page)));
+function renderLibrary(which){const prefix=which==="course"?"course":"book",search=document.getElementById(prefix+"Search").value.trim().toLowerCase(),topic=document.getElementById(prefix+"Topic").value,level=document.getElementById(prefix+"Level").value;const filtered=resources.filter(r=>(which==="course"?isCourse(r):isBook(r))&&(topic==="All topics"||r.topic===topic)&&(level==="All levels"||r.level===level)&&(!search||[r.title,r.topic,r.description,r.source,r.type].join(" ").toLowerCase().includes(search)));const target=document.getElementById(prefix+"Results");target.innerHTML=filtered.length?filtered.map((r,i)=>`<article class="resource"><div class="resource-top"><span class="chip">${esc(r.level)}</span><button class="secondary smallbtn" onclick="deleteResource(${resources.indexOf(r)})">Remove</button></div><h3>${esc(r.title)}</h3><div class="meta">${esc(r.topic)} · ${esc(r.type)} · ${esc(r.source)}</div><p>${esc(r.description)}</p><a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article>`).join(""):`<div class="empty" style="grid-column:1/-1">No matching resources. Try changing your filters or add a resource.</div>`}
+["courseSearch","courseTopic","courseLevel"].forEach(id=>document.getElementById(id).addEventListener(id.endsWith("Search")?"input":"change",()=>renderLibrary("course")));
+["bookSearch","bookTopic","bookLevel"].forEach(id=>document.getElementById(id).addEventListener(id.endsWith("Search")?"input":"change",()=>renderLibrary("book")));
+window.deleteResource=function(i){if(confirm("Remove this resource from this browser?")){resources.splice(i,1);saveResources();renderLibrary("course");renderLibrary("book");updateCounts()}};
+function updateCounts(){document.getElementById("totalCount").textContent=resources.length;document.getElementById("courseCount").textContent=resources.filter(isCourse).length;document.getElementById("bookCount").textContent=resources.filter(isBook).length}
+document.getElementById("resourceForm").addEventListener("submit",e=>{e.preventDefault();const url=document.getElementById("newUrl").value.trim();if(!/^https?:\/\//i.test(url)){document.getElementById("formStatus").textContent="Enter a valid HTTP/HTTPS URL.";return}resources.push({title:document.getElementById("newTitle").value.trim(),type:document.getElementById("newType").value,topic:document.getElementById("newTopic").value,level:document.getElementById("newLevel").value,description:document.getElementById("newDescription").value.trim(),url,source:document.getElementById("newSource").value.trim()});saveResources();updateCounts();e.target.reset();document.getElementById("newTopic").value=TOPICS[0];document.getElementById("formStatus").textContent="Resource saved in this browser.";});
+document.getElementById("exportBtn").addEventListener("click",()=>{const cols=["title","type","topic","level","description","url","source"];const csv=[cols.join(","),...resources.map(r=>cols.map(k=>'"'+String(r[k]??"").replace(/"/g,'""')+'"').join(","))].join("\r\n");const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8;"}));a.download="gyangangaa-resources.csv";a.click();URL.revokeObjectURL(a.href)});
+let chatHistory=[];
+function addBubble(role,content){const el=document.createElement("div");el.className="bubble "+role;el.textContent=content;document.getElementById("messages").appendChild(el);document.getElementById("messages").scrollTop=999999}
+document.getElementById("chatForm").addEventListener("submit",async e=>{e.preventDefault();const prompt=document.getElementById("chatPrompt").value.trim();if(!prompt)return;document.getElementById("chatPrompt").value="";addBubble("user",prompt);chatHistory.push({role:"user",parts:[{text:prompt}]});const key=document.getElementById("geminiKey").value.trim(),model=document.getElementById("geminiModel").value.trim()||"gemini-2.5-flash";if(!key){const reply="Gemini is not configured. To use AI chat, enter your own Gemini API key in the optional field above. You can still browse, search, and add resources without an API key.";addBubble("assistant",reply);chatHistory.push({role:"model",parts:[{text:reply}]});return}const send=document.querySelector("#chatForm button");send.disabled=true;send.textContent="Thinking…";try{const contents=chatHistory.map(m=>({role:m.role,parts:m.parts}));const response=await fetch("https://generativelanguage.googleapis.com/v1beta/models/"+encodeURIComponent(model)+":generateContent?key="+encodeURIComponent(key),{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({systemInstruction:{parts:[{text:"You are ज्ञानगंगा AI, a friendly electronics engineering tutor. Explain concepts step by step, give practical examples, and help students debug code safely. Be honest about uncertainty. Do not claim copyrighted books are freely available."}]},contents,generationConfig:{temperature:0.5}})});const data=await response.json();if(!response.ok)throw new Error(data?.error?.message||("HTTP "+response.status));const answer=data?.candidates?.[0]?.content?.parts?.map(p=>p.text||"").join("")||"Please try asking again.";addBubble("assistant",answer);chatHistory.push({role:"model",parts:[{text:answer}]})}catch(err){const msg="Gemini error: "+err.message+"\\nCheck your API key, model name, API access, and quota.";addBubble("assistant",msg);chatHistory.push({role:"model",parts:[{text:msg}]})}finally{send.disabled=false;send.textContent="Send"}});
+document.getElementById("clearChat").addEventListener("click",()=>{chatHistory=[];document.getElementById("messages").innerHTML="";addBubble("assistant","Chat cleared. Ask a new electronics question whenever you're ready.")});
+updateCounts();
+</script>
+</body>
+</html>
